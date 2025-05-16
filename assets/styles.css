@@ -839,25 +839,42 @@ img {
     }
 }
 /* Mobile Banner Fix (applies below 768px) */
-
-
-/* Mobile Banner Fix */
+/* Mobile Banner Adjustment */
 @media (max-width: 768px) {
-  .banner-container {
-    height: auto !important;
-    min-height: 60vh;
-    display: block;
-    overflow: visible;
-    position: relative;
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    background-size: contain;
+    padding:10px 10px 10px;
+    align-items: flex-start;
   }
 
-  .banner-image {
-    object-fit: contain !important;
-    object-position: center center;
+  .hero .container {
+    transform: none;
+    padding: 20px;
     width: 100%;
-    height: auto;
-    max-height: 80vh;
-    position: static;
+  }
+}
+/* Reduce Hero-About Gap on Mobile */
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 0px; /* Reduced from previous value */
+  }
+  
+  .about {
+    margin-top: -40rem; /* Pulls up the about section */
+  }
+  
+  /* If using padding instead of margin */
+  .about-section {
+    padding-top: 0rem !important;
+  }
+}
+/* For Smaller Mobile Screens */
+@media (max-width: 480px) {
+  .hero {
+    background-size: contain;
+    background-position: top center;
   }
 }
 
