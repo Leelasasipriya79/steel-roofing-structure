@@ -891,6 +891,7 @@ img {
     background-size: contain;
     padding:10px 10px 10px;
     align-items: flex-start;
+    margin-top:50px;
   }
 
   .hero .container {
